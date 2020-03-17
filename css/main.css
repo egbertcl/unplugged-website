@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.4; 
 }
 
 /*
@@ -89,7 +89,7 @@ textarea {
 
 .browserupgrade {
   margin: 0.2em 0;
-  background: #ccc;
+  background: #e7ff99;
   color: #000;
   padding: 0.2em 0;
 }
@@ -97,10 +97,159 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#heropic {
-  background: url("../img/merld_home_pic.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 1em 0.625em;
+  margin: 0em 1em 1em 1em;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+.heading-section {
+ background-image:  url(../img/green-curve1.jpg); 
+ background-size: cover;
+ background-color: green;
+ height: 400px; 
+}
+.main-headings {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-weight: 700;
+  font-size: .85em;
+  text-align: center;
+  margin-bottom: 0;
+}
+#titleline1 {
+  margin: 0px;
+  padding-top: .5em;
+}
+#titleline2 {
+  margin: 0px;
+} 
+.main-headings h3 {
+  margin: 0px;
+  font-size: .5em;
+}
+
+/* ==========================================================================
+   Top Section
+   ========================================================================== */
+.top {
+  margin: 4em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+.kids-img {
+  display: none;
+}
+
+/* Symptoms section */
+
+.symptom-wrapper h2 {
+  font-family: "Kalam", cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+.symptoms h3 {
+  font-family: "Kalam", cursive;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+.symptoms {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  margin: 4em;
+}
+
+.symptom-box {
+  background: white;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.symptom-box h3 {
+  border: none;
+  box-shadow:  none;
+  text-align: center;
+}
+.symptom-box img {
+  text-align:  center;
+}
+.symptoms-list {
+  text-align: left;
+}
+
+/* Video section */
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 3em 0 3em 0;
+  background-image: linear-gradient(270deg, rgb(0, 138, 28) 0%, rgb(160, 207, 0) 100%);
+}
+
+/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+.video-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.video-iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/***************************************************************************
+/* FOOTER
+/***************************************************************************/
+footer  {
+  display: flex;
+  flex-wrap:  wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 2em;
+}
+.logo {
+  height: 10em;
+  margin-top: -2em;
+}
+.mail-icon {
+  height: 2em;
 }
 /* ==========================================================================
    Helper classes
@@ -194,6 +343,93 @@ textarea {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
+/* Tablet styles here */
+@media all and (min-width: 768px) {
+  .top h1 {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .video-container {
+  overflow: hidden;
+  height: 315px;
+  width: 560px;
+}
+  .kids-img {
+    display: flex;
+    text-align: center;
+    margin: 50px 0 0 90px;
+  }
+}
+
+/* Desktop styles here */
+@media all and (min-width: 1200px) {
+
+  .menu {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+  .menu li {
+    padding: 1em;
+  }
+
+.main-headings {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 1em;
+}
+#titleline1 h1 {
+    font-size: 4em;
+  }         
+.main-headings h3 {
+    font-size: 1.75em;
+    padding-bottom: 1em;
+  }
+
+.definition {
+  padding-top: 3.5em;
+  font-size: 1.5em
+}
+.kids-img {
+  display: flex;
+  margin: 50px 0 0 110px;
+  text-align: center;
+  border-radius: 30px;
+}
+.symptom-wrapper h2 {
+  font-size: 3em;
+}
+.symptoms h3 {
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+.symptoms-list {
+  font-size: 1.5em;
+}
+
+/*  Video      */
+/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+.video-container {
+  overflow: hidden;
+/*  padding-top: 56.25%; */
+  position: relative;
+  height: 315px;
+  width: 560px;
+}
+
+.video-iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+/*  position: absolute;*/
+  left: 0;
+  top: 0;
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -265,4 +501,4 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
+ }

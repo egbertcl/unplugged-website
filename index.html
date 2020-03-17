@@ -12,6 +12,14 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam|Raleway&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -27,49 +35,119 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
   </head>
+
   <header>
-    <h1>HOME</h1>
-    <div class="content-wrapper">
+    <div class="menu-area">
       <nav>
-        <ul>
-          <li><a href="index.html" target="_blank">home</a></li>
-          <li><a href="about/index.html" target="_blank">about</a></li>
-          <li><a href="faq/index.html" target="_blank">faq</a></li>
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="nav-links" target="_blank">HOME</a>
+          </li>
+          <li>
+            <a href="about/index.html" class="nav-links" target="_blank"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a href="faq/index.html" class="nav-links" target="_blank">FAQ</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <body>
-    <main id="heropic">
-      <h1>Mixed Expressive Receptive Language Disorder</h1>
-      <h3>MERLD</h3>
-      <p>
-        Mixed receptive-expressive language disorder (DSM-IV 315.32) is a
-        communication disorder in which a child struggles to get their meaning
-        or message across to others (expressive) and also struggles to
-        understand and process the messages and information they receive
-        (receptive) from others. MERLD ranges from mild to severe. Speech
-        therapy can help.
-      </p>
-      <section class="symptoms">
-        <h1>symptoms</h1>
-        <p>Limited ability to form sentences.</p>
-        <p>Leaving words out of sentences.</p>
-        <p>Saying words in the wrong order.</p>
-        <p>Difficulty understand what someone has said.</p>
-        <p>Struggle to follow directions that are spoken.</p>
-        <p>Repeating words or phrases.</p>
+    <main>
+      <section class="heading-section">
+        <div class="main-headings">
+          <h1 id="titleline1">Mixed Expressive Receptive</h1>
+          <h1 id="titleline2">Language Disorder</h1>
+          <h3>(MERLD)</h3>
+        </div>
       </section>
-      <section class="kids video">
-        <h1>video</h1>
+
+      <section class="top">
+        <div class="definition-area">
+          <p class="definition">
+            Mixed receptive-expressive language disorder (DSM-IV 315.32) is a
+            communication disorder in which a child struggles to get their
+            meaning or message across to others (expressive) and also struggles
+            to understand and process the messages and information they receive
+            (receptive) from others. MERLD ranges from mild to severe. Speech
+            therapy can help.
+          </p>
+        </div>
+        <div>
+          <img
+            class="kids-img"
+            src="../img/boys_playing.jpg"
+            alt="boy jumping"
+            width="440"
+            height="410"
+          />
+        </div>
+      </section>
+
+      <section class="symptom-wrapper">
+        <h2>Common Symptoms</h2>
+        <div class="symptoms">
+          <div class="symptom-box">
+            <img
+              src="../img/iconmonstr-speech-bubble-4.svg"
+              alt="icon"
+              width="125"
+            />
+            <h3 class="symptom-box">Expressive</h3>
+            <ul class="symptoms-list">
+              <li>
+                Limited ability to form sentences.
+              </li>
+              <li>Leaving words out of sentences.</li>
+              <li>Saying words in the wrong order.</li>
+              <li>
+                Reduced vocabulary in comparison to other children of the same
+                age.
+              </li>
+            </ul>
+          </div>
+
+          <div class="symptom-box">
+            <img src="../img/iconmonstr-hearing-1.svg" alt="icon" width="125" />
+            <h3 class="symptom-box">Receptive</h3>
+            <ul class="symptoms-list">
+              <li>Difficulty understanding what someone has said.</li>
+              <li>Struggles to follow directions that are spoken.</li>
+              <li>Repeating words or phrases.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="video-container">
+          <iframe
+            class="video-iframe"
+            src="https://www.youtube.com/embed/DVpAfoHw7LM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
     </main>
+
     <footer>
-      <h1>Facebook Groups</h1>
-      MERLD Parents Network MERLD World Magazine Natural Late Talkers(NLT)/MERLD
-      MERLD Adults with MERLD MERLD/NLT Homeschoolers NLT-MERLD families of
-      older kids
+      <a href="mailto:carol@carolegbert.tech"
+        ><img class="mail-icon" src="../img/iconmonstr-email-2.svg" alt="icon"
+      /></a>
+
+      <a href="http://carolegbert.tech" target="_blank"
+        ><img
+          class="logo"
+          src="../img/carolegbertlogo200x200.png"
+          alt="logo"
+          width="200"
+      /></a>
     </footer>
   </body>
 </html>
