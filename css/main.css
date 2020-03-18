@@ -132,14 +132,12 @@ a:hover {
 .heading-section {
  background-image:  url(../img/green-curve1.jpg); 
  background-size: cover;
- background-color: green;
  height: 400px; 
 }
 .main-headings {
   font-family: "Raleway", sans-serif;
   width: 100%;
   font-weight: 700;
-  font-size: .85em;
   text-align: center;
   margin-bottom: 0;
 }
@@ -152,18 +150,19 @@ a:hover {
 } 
 .main-headings h3 {
   margin: 0px;
-  font-size: .5em;
+  font-size: 2em;
 }
 
 /* ==========================================================================
-   Top Section
+   Definition Area Section
    ========================================================================== */
-.top {
-  margin: 4em;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+.definition-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 1em;
 }
 
 .kids-img {
@@ -245,11 +244,11 @@ footer  {
   font-size: 2em;
 }
 .logo {
-  height: 10em;
-  margin-top: -2em;
+  display: flex;
 }
 .mail-icon {
-  height: 2em;
+  margin: 1.25em;
+  display: flex;
 }
 /* ==========================================================================
    Helper classes
@@ -345,25 +344,6 @@ footer  {
 }
 /* Tablet styles here */
 @media all and (min-width: 768px) {
-  .top h1 {
-    font-family: "Kalam", cursive;
-    font-weight: 700;
-    font-size: 40px;
-  }
-  .video-container {
-  overflow: hidden;
-  height: 315px;
-  width: 560px;
-}
-  .kids-img {
-    display: flex;
-    text-align: center;
-    margin: 50px 0 0 90px;
-  }
-}
-
-/* Desktop styles here */
-@media all and (min-width: 1200px) {
 
   .menu {
     display: flex;
@@ -390,17 +370,108 @@ footer  {
     font-size: 1.75em;
     padding-bottom: 1em;
   }
-
+.definition-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 1em;
+}
 .definition {
-  padding-top: 3.5em;
-  font-size: 1.5em
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+.kids-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px grey;
+}
+.symptom-wrapper h2 {
+  font-size: 3em;
+}
+.symptoms h3 {
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+.symptoms-list {
+  font-size: 1.5em;
+}
+
+/*  Video      */
+.video-container {
+  overflow: hidden;
+  position: relative;
+  height: 315px;
+  width: 560px;
+}
+
+.video-iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/***************************************************
+/* Desktop styles here */
+/***************************************************/
+
+@media all and (min-width: 1200px) {
+
+.menu {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+.menu li {
+    padding: 1em;
+  }
+
+.main-headings {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 1em;
+}
+#titleline1 h1 {
+    font-size: 4em;
+  }         
+.main-headings h3 {
+    font-size: 1.75em;
+    padding-bottom: 1em;
+  }
+
+.definition-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  margin: 4em;
+}
+.definition {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-right: 1em;
 }
 .kids-img {
   display: flex;
-  margin: 50px 0 0 110px;
-  text-align: center;
+  justify-content: center;
   border-radius: 30px;
+  box-shadow: 10px 10px 10px grey;
+  margin: 0 auto;
+  width: 100%;
 }
+
 .symptom-wrapper h2 {
   font-size: 3em;
 }
