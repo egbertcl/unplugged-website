@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4; 
+  line-height: 1.4;
 }
 
 /*
@@ -95,7 +95,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles - Default styles for mobile devices
    ========================================================================== */
 body {
   font-family: "Raleway", sans-serif;
@@ -130,9 +130,9 @@ a:hover {
    Headings
    ========================================================================== */
 .heading-section {
- background-image:  url(../img/green-curve1.jpg); 
- background-size: cover;
- height: 400px; 
+  background-image: url(../img/green-curve1.jpg);
+  background-size: cover;
+  height: 400px;
 }
 .main-headings {
   font-family: "Raleway", sans-serif;
@@ -143,11 +143,11 @@ a:hover {
 }
 #titleline1 {
   margin: 0px;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 #titleline2 {
   margin: 0px;
-} 
+}
 .main-headings h3 {
   margin: 0px;
   font-size: 1.5em;
@@ -199,11 +199,11 @@ a:hover {
 }
 .symptom-box h3 {
   border: none;
-  box-shadow:  none;
+  box-shadow: none;
   text-align: center;
 }
 .symptom-box img {
-  text-align:  center;
+  text-align: center;
 }
 .symptoms-list {
   text-align: left;
@@ -215,7 +215,11 @@ a:hover {
   grid-template-columns: 1fr;
   justify-items: center;
   padding: 3em 0 3em 0;
-  background-image: linear-gradient(270deg, rgb(0, 138, 28) 0%, rgb(160, 207, 0) 100%);
+  background-image: linear-gradient(
+    270deg,
+    rgb(0, 138, 28) 0%,
+    rgb(160, 207, 0) 100%
+  );
 }
 
 /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
@@ -234,9 +238,9 @@ a:hover {
 /***************************************************************************
 /* FOOTER
 /***************************************************************************/
-footer  {
+footer {
   display: flex;
-  flex-wrap:  wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-left: 4em;
@@ -251,47 +255,83 @@ footer  {
   display: flex;
 }
 /* ==========================================================================
-   Resource Page
-   ========================================================================== */  
+   About Page  Default/Mobile
+========================================================================== */
+.abt-section {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  margin: 0 1em 1em 1em;
+}
+.abt-letter h1 {
+  font-family: "Kalam", cursive;
+  margin-top: 0;
+}
+.abt-letter a {
+  color: blue;
+}
+.abt-icon {
+  width: 1em;
+  padding-bottom: 0.25em;
+}
+.abt-letter {
+  padding-bottom: 2em;
+}
+.abt-signature {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+/* ==========================================================================
+   Resource Page  Default/Mobile
+========================================================================== */
 .res-heading {
   margin: 0;
 }
 .res-download {
-     font-size: 1em;
-     display: flex;
-     justify-content: flex-end;
-     padding-bottom: 1em;
-     text-decoration: underline;
-     cursor: pointer;
-   }
+  font-size: 1em;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1em;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .res-section {
   text-align: center;
   font-family: "Kalam", cursive;
   font-size: 1em;
-  margin: 0 .5em 0 .5em;
+  margin: 0 0.5em 0 0.5em;
 }
 .res-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: .65em;
+  grid-gap: 0.65em;
 }
 .res-box {
   font-family: "Raleway", sans-serif;
-  font-size: .60em;
+  font-size: 0.6em;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
   padding: 10px;
-  background-image: linear-gradient(270deg, rgb(0, 138, 28) 0%, rgb(160, 207, 0) 100%);
+  background-image: linear-gradient(
+    270deg,
+    rgb(0, 138, 28) 0%,
+    rgb(160, 207, 0) 100%
+  );
 }
-
+/*========================================================================= */
+/* Footer                                                                   */
+/*========================================================================= */
 .footer-credit {
-  font-size: .5em;
+  font-size: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-/*   404-Page not found
-/* 404 PAGE */
+/* ==========================================================================
+   404 Page - Page Not Found  Default/Mobile
+========================================================================== */
 .page-404-container {
   max-width: 960px;
   height: 100%;
@@ -315,7 +355,7 @@ footer  {
   text-align: center;
 }
 .page-404-para p {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-size: 1.5em;
   line-height: 1em;
 }
@@ -403,18 +443,14 @@ footer  {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-/* Tablet styles here */
-@media all and (min-width: 768px) {
+/***************************************************
+/* Tablet Styles
+/***************************************************/
 
+@media only screen and (min-width: 768px) {
   .menu {
     display: flex;
     font-size: 1.5em;
@@ -426,162 +462,206 @@ footer  {
     padding: 1em;
   }
 
-.main-headings {
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  font-weight: 700;
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 1em;
-}
-#titleline1 h1 {
+  .main-headings {
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+  }
+  #titleline1 h1 {
     font-size: 4em;
-  }         
-.main-headings h3 {
+  }
+  .main-headings h3 {
     padding-bottom: 1em;
   }
-.definition-area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 4em;
-  margin-right: 4em;
-  font-size: 1em;
-}
-.definition {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  padding-right: 1em;
-}
+  .definition-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 1em;
+  }
+  .definition {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    padding-right: 1em;
+  }
 
-.kids-img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border-radius: 30px;
-  box-shadow: 10px 10px 10px grey;
-}
-.symptom-wrapper h2 {
-  font-size: 3em;
-}
-.symptoms h3 {
-  padding-bottom: 10px;
-  font-size: 2em;
-}
-.symptoms-list {
-  font-size: 1.5em;
-}
+  .kids-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px grey;
+  }
+  .symptom-wrapper h2 {
+    font-size: 3em;
+  }
+  .symptoms h3 {
+    padding-bottom: 10px;
+    font-size: 2em;
+  }
+  .symptoms-list {
+    font-size: 1.5em;
+  }
 
-/*  Video      */
-.video-container {
-  overflow: hidden;
-  position: relative;
-  height: 315px;
-  width: 560px;
-}
-
-.video-iframe {
-  border: 0;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-/* Resource page */
-.res-section {
-font-size: 2em;
-margin: 0 2em 0 2em;
-}
-/***************************************************
-/* Desktop styles here */
+  /***************************************************
+/* Video - Tablet Styles 
 /***************************************************/
 
-@media all and (min-width: 1200px) {
+  .video-container {
+    overflow: hidden;
+    position: relative;
+    height: 315px;
+    width: 560px;
+  }
 
-.menu {
+  .video-iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  /***************************************************
+/* Resource Page - Tablet Styles 
+/***************************************************/
+
+  .res-section {
+    font-size: 2em;
+    margin: 0 2em 0 2em;
+  }
+  /***************************************************
+/* About Page - Tablet Styles 
+/***************************************************/
+  .abt-section {
+    margin: 2em;
+    font-size: 1.5em;
+  }
+  .abt-letter h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  /***************************************************
+  * Footer
+  ****************************************************/
+
+  .mail-icon {
+    margin: 1.25em;
+  }
+}
+/***************************************************
+/* Desktop styles here 
+/***************************************************/
+
+@media only screen and (min-width: 1200px) {
+  .menu {
     display: flex;
     font-size: 1.5em;
     justify-content: flex-end;
     margin: 0 auto;
     padding: 0;
   }
-.menu li {
+  .menu li {
     padding: 1em;
   }
 
-.main-headings {
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  font-weight: 700;
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 1em;
-}
-#titleline1 h1 {
+  .main-headings {
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+  }
+  #titleline1 h1 {
     font-size: 4em;
-  }         
-.main-headings h3 {
+  }
+  .main-headings h3 {
     padding-bottom: 1em;
   }
 
-.definition-area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1em;
-  margin: 4em;
-}
-.definition {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  padding-right: 1em;
-}
-.kids-img {
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-  box-shadow: 10px 10px 10px grey;
-  margin: 0 auto;
-  width: 100%;
-}
+  .definition-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    margin: 4em;
+  }
+  .definition {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    padding-right: 1em;
+  }
+  .kids-img {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px grey;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.symptom-wrapper h2 {
-  font-size: 3em;
-}
-.symptoms h3 {
-  padding-bottom: 10px;
-  font-size: 2em;
-}
-.symptoms-list {
-  font-size: 1.5em;
-}
+  .symptom-wrapper h2 {
+    font-size: 3em;
+  }
+  .symptoms h3 {
+    padding-bottom: 10px;
+    font-size: 2em;
+  }
+  .symptoms-list {
+    font-size: 1.5em;
+  }
+  /***************************************************
+/* Video - Desktop styles  
+/***************************************************/
+  .video-container {
+    overflow: hidden;
+    position: relative;
+    height: 315px;
+    width: 560px;
+  }
 
-/*  Video      */
-/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
-.video-container {
-  overflow: hidden;
-/*  padding-top: 56.25%; */
-  position: relative;
-  height: 315px;
-  width: 560px;
-}
+  .video-iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  /***************************************************
+  * Footer
+  ****************************************************/
 
-.video-iframe {
-  border: 0;
-  height: 100%;
-  width: 100%;
-/*  position: absolute;*/
-  left: 0;
-  top: 0;
+  .mail-icon {
+    margin: 1.25em;
+  }
+  /***************************************************
+/* Resource Page - Desktop
+/***************************************************/
+  .res-section {
+    font-size: 2em;
+    margin: 0 2em 0 2em;
+  }
+  /***************************************************
+/* About Page - Desktop Styles 
+/***************************************************/
+  .abt-section {
+    margin: 2em;
+    font-size: 1.75em;
+    margin-top: 0;
+  }
+  .abt-letter h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
-/* Resource page */
-.res-section {
-font-size: 2em;
-margin: 0 2em 0 2em;
-}
-
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -652,4 +732,4 @@ margin: 0 2em 0 2em;
   h3 {
     page-break-after: avoid;
   }
- }
+}
