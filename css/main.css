@@ -111,8 +111,8 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 1em 0.625em;
-  margin: 0em 1em 1em 1em;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .nav-links.active {
@@ -120,7 +120,7 @@ body {
 }
 
 a {
-  color: black;
+  color: blue;
   text-decoration: none;
 }
 a:hover {
@@ -130,16 +130,17 @@ a:hover {
    Headings
    ========================================================================== */
 .heading-section {
-  background-image: url(../img/green-curve1.jpg);
+  background-image: url(../img/green-curve3.jpg);
   background-size: cover;
-  height: 400px;
+  height: 350px;
 }
 .main-headings {
-  font-family: "Raleway", sans-serif;
+  font-family: "Kalam", cursive;
   width: 100%;
   font-weight: 700;
   text-align: center;
   margin-bottom: 0;
+  font-size: 1.5em;
 }
 #titleline1 {
   margin: 0px;
@@ -150,7 +151,7 @@ a:hover {
 }
 .main-headings h3 {
   margin: 0px;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* ==========================================================================
@@ -261,11 +262,16 @@ footer {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 1em;
-  margin: 0 1em 1em 1em;
+  margin: 0;
 }
-.abt-letter h1 {
+
+.abt-heading {
+  margin: 0;
   font-family: "Kalam", cursive;
-  margin-top: 0;
+  background-image: url(../img/green-curve3.jpg);
+  background-size: cover;
+  height: 220px;
+  padding-top: 1em;
 }
 .abt-letter a {
   color: blue;
@@ -274,21 +280,23 @@ footer {
   width: 1em;
   padding-bottom: 0.25em;
 }
-.abt-letter {
-  padding-bottom: 2em;
+.abt-letter p {
+  margin: 2em;
+  font-size: 1em;
 }
-.abt-signature {
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-size: 1.5em;
-}
+
 /* ==========================================================================
    Resource Page  Default/Mobile
 ========================================================================== */
 .res-heading {
   margin: 0;
+  background-image: url(../img/green-curve3.jpg);
+  background-size: cover;
+  height: 220px;
+  padding-top: 1em;
 }
 .res-download {
+  margin: 2em;
   font-size: 1em;
   display: flex;
   justify-content: flex-end;
@@ -301,9 +309,10 @@ footer {
   text-align: center;
   font-family: "Kalam", cursive;
   font-size: 1em;
-  margin: 0 0.5em 0 0.5em;
+  margin: 0;
 }
 .res-container {
+  margin: 2em;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 0.65em;
@@ -311,15 +320,10 @@ footer {
 .res-box {
   font-family: "Raleway", sans-serif;
   font-size: 0.6em;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
-  padding: 10px;
-  background-image: linear-gradient(
-    270deg,
-    rgb(0, 138, 28) 0%,
-    rgb(160, 207, 0) 100%
-  );
+  -webkit-box-shadow: 5px 5px 5px 5px #777;
+  -moz-box-shadow: 5px 5px 5px 5px #777;
+  box-shadow: 5px 5px 5px 5px #777;
+  padding: 0.75em 0.5em;
 }
 /*========================================================================= */
 /* Footer                                                                   */
@@ -455,7 +459,7 @@ footer {
     display: flex;
     font-size: 1.5em;
     justify-content: flex-end;
-    margin: 0 auto;
+    margin: 0 2em;
     padding: 0;
   }
   .menu li {
@@ -463,7 +467,7 @@ footer {
   }
 
   .main-headings {
-    font-family: "Raleway", sans-serif;
+    font-family: "Kalam", cursive;
     width: 100%;
     font-weight: 700;
     font-size: 1.5em;
@@ -534,18 +538,25 @@ footer {
 
   .res-section {
     font-size: 2em;
-    margin: 0 2em 0 2em;
+    margin: 0;
+  }
+  .res-heading {
+    font-size: 2em;
+    margin: 0;
   }
   /***************************************************
 /* About Page - Tablet Styles 
 /***************************************************/
   .abt-section {
-    margin: 2em;
+    margin: 0;
     font-size: 1.5em;
   }
-  .abt-letter h1 {
+  .abt-heading {
     font-size: 2em;
     margin: 0;
+  }
+  .abt-letter p {
+    font-size: 0.75em;
   }
   /***************************************************
   * Footer
@@ -564,7 +575,7 @@ footer {
     display: flex;
     font-size: 1.5em;
     justify-content: flex-end;
-    margin: 0 auto;
+    margin: 0 2em;
     padding: 0;
   }
   .menu li {
@@ -572,12 +583,11 @@ footer {
   }
 
   .main-headings {
-    font-family: "Raleway", sans-serif;
+    font-family: "Kalam", cursive;
     width: 100%;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    padding-top: 1em;
   }
   #titleline1 h1 {
     font-size: 4em;
@@ -647,19 +657,26 @@ footer {
 /***************************************************/
   .res-section {
     font-size: 2em;
-    margin: 0 2em 0 2em;
+    margin: 0;
+  }
+  .res-heading {
+    font-size: 2em;
+    margin: 0;
   }
   /***************************************************
 /* About Page - Desktop Styles 
 /***************************************************/
   .abt-section {
-    margin: 2em;
+    margin: 0;
     font-size: 1.75em;
     margin-top: 0;
   }
-  .abt-letter h1 {
+  .abt-heading {
     font-size: 2em;
     margin: 0;
+  }
+  .abt-letter p {
+    font-size: 0.75em;
   }
 }
 @media print,
