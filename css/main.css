@@ -270,7 +270,7 @@ footer {
   font-family: "Kalam", cursive;
   background-image: url(../img/green-curve3.jpg);
   background-size: cover;
-  height: 220px;
+  height: 250px;
   padding-top: 1em;
 }
 .abt-letter a {
@@ -292,7 +292,7 @@ footer {
   margin: 0;
   background-image: url(../img/green-curve3.jpg);
   background-size: cover;
-  height: 220px;
+  height: 250px;
   padding-top: 1em;
 }
 .res-download {
@@ -314,7 +314,7 @@ footer {
 .res-container {
   margin: 2em;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   grid-gap: 0.65em;
 }
 .res-box {
@@ -325,43 +325,16 @@ footer {
   box-shadow: 5px 5px 5px 5px #777;
   padding: 0.75em 0.5em;
 }
+.res-box li {
+  list-style-type: square;
+  list-style-position: inside;
+}
 /*========================================================================= */
 /* Footer                                                                   */
 /*========================================================================= */
 .footer-credit {
   font-size: 0.5em;
   margin-bottom: 0.5em;
-}
-
-/* ==========================================================================
-   404 Page - Page Not Found  Default/Mobile
-========================================================================== */
-.page-404-container {
-  max-width: 960px;
-  height: 100%;
-}
-
-.page-404-img {
-  margin: 0 auto;
-  display: inline-block;
-  width: 300px;
-}
-.page-404-head {
-  font-family: "Kalam", cursive;
-  font-size: 2.5em;
-  text-align: center;
-}
-
-.page-404-para {
-  margin: 0 auto;
-  width: 500px;
-  display: inline-block;
-  text-align: center;
-}
-.page-404-para p {
-  font-family: "Kalam", cursive;
-  font-size: 1.5em;
-  line-height: 1em;
 }
 
 /* ==========================================================================
